@@ -1,0 +1,10 @@
+{
+  "name": "obsidian-typora-match",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "node build.mjs",
+    "test": "node --test test/*.test.cjs",
+    "check": "node --check main.js && node --check build.mjs"
+  }
+}

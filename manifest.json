@@ -1,0 +1,10 @@
+{
+  "id": "typora-match",
+  "name": "Typora Match",
+  "version": "1.0.0",
+  "minAppVersion": "1.13.7",
+  "description": "Apply typography and reading layout inspired by the Typora GitHub theme, with an optional right outline.",
+  "author": "nicejames",
+  "isDesktopOnly": true,
+  "authorUrl": "https://github.com/leessju"
+}

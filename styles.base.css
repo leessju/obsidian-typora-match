@@ -1,0 +1,139 @@
+/* Local Typora GitHub theme parity. Scoped to the Typora Match plugin. */
+body.typora-match {
+  --typora-match-width: 860px;
+  --typora-match-font: "Typora Open Sans", "Clear Sans", "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif;
+  --file-line-width: var(--typora-match-width);
+  --font-text: var(--typora-match-font);
+  --font-text-size: 16px;
+  --line-height-normal: 1.6;
+  --h1-size: 2.25em;
+  --h2-size: 1.75em;
+  --h3-size: 1.5em;
+  --h4-size: 1.25em;
+  --h5-size: 1em;
+  --h6-size: 1em;
+  --h1-line-height: 1.2;
+  --h2-line-height: 1.225;
+  --h3-line-height: 1.43;
+  --h4-line-height: 1.4;
+  --h5-line-height: 1.4;
+  --h6-line-height: 1.4;
+  --h1-weight: 700;
+  --h2-weight: 700;
+  --h3-weight: 700;
+  --h4-weight: 700;
+  --h5-weight: 700;
+  --h6-weight: 700;
+  --p-spacing: 0.8em;
+  --heading-spacing: 16px;
+}
+@media (min-width: 1400px) {
+  body.typora-match { --typora-match-width: 1024px; }
+}
+@media (min-width: 1800px) {
+  body.typora-match { --typora-match-width: 1200px; }
+}
+body.typora-match.theme-light {
+  --text-normal: #333;
+  --text-muted: #777;
+  --text-accent: #4183c4;
+  --background-primary: #fff;
+}
+body.typora-match .markdown-preview-view {
+  padding: 0 !important;
+  font-family: var(--typora-match-font);
+  font-size: 16px;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+body.typora-match .markdown-preview-view .markdown-preview-sizer {
+  width: 100%;
+  max-width: var(--typora-match-width) !important;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px 30px 100px !important;
+}
+body.typora-match .markdown-source-view.mod-cm6 .cm-sizer {
+  width: 100%;
+  max-width: var(--typora-match-width) !important;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 30px 30px 100px !important;
+}
+body.typora-match .markdown-source-view.mod-cm6 .cm-content {
+  font-family: var(--typora-match-font);
+  font-size: 16px;
+  line-height: 1.6;
+  padding: 0 !important;
+}
+body.typora-match .markdown-preview-view :is(h1,h2,h3,h4,h5,h6) {
+  font-family: var(--typora-match-font);
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-weight: 700;
+  color: var(--text-normal);
+  letter-spacing: normal;
+}
+body.typora-match .markdown-preview-view h1 { font-size: 36px; line-height: 1.2; }
+body.typora-match .markdown-preview-view h2 { font-size: 28px; line-height: 1.225; }
+body.typora-match .markdown-preview-view h3 { font-size: 24px; line-height: 1.43; }
+body.typora-match .markdown-preview-view h4 { font-size: 20px; line-height: 1.4; }
+body.typora-match .markdown-preview-view :is(h5,h6) { font-size: 16px; line-height: 1.4; }
+body.typora-match .markdown-preview-view h6 { color: #777; }
+body.typora-match .markdown-preview-view :is(h1,h2) {
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0;
+}
+body.typora-match.theme-light .markdown-preview-view :is(h1,h2) { border-bottom-color: #eee; }
+body.typora-match .markdown-preview-view :is(p,blockquote,ul,ol,dl,table) { margin: 0.8em 0; }
+body.typora-match .markdown-preview-view :is(ul,ol) { padding-inline-start: 30px; }
+body.typora-match .markdown-preview-view li > :is(ul,ol) { margin: 0; }
+body.typora-match .markdown-preview-view li { margin-block: 8px 0; padding-block: 0; }
+body.typora-match .markdown-preview-view li:first-child { margin-top: 0; }
+body.typora-match .markdown-preview-view blockquote {
+  border-left: 4px solid #dfe2e5;
+  border-radius: 0;
+  padding: 0 15px;
+  color: var(--text-muted);
+  background: transparent;
+}
+body.typora-match .markdown-preview-view a { color: #4183c4; }
+body.typora-match .markdown-preview-view table :is(th,td) {
+  border: 1px solid #dfe2e5;
+  padding: 6px 13px;
+}
+body.typora-match.theme-light .markdown-preview-view table :is(thead,tr:nth-child(2n)) { background: #f8f8f8; }
+body.typora-match .markdown-preview-view :is(code,pre) { border-radius: 3px; }
+body.typora-match .inline-title { display: none; }
+body.typora-match .workspace-leaf-content[data-type="outline"] {
+  --font-interface: var(--typora-match-font);
+  --nav-item-size: 14px;
+  --nav-item-color: var(--text-normal);
+  --nav-item-padding: 3px 10px;
+  --nav-item-parent-padding: 3px 10px;
+  --nav-item-weight: 400;
+  --nav-indentation: 16px;
+}
+body.typora-match.theme-light .workspace-leaf-content[data-type="outline"] { background: #fafafa; }
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-self {
+  font-family: var(--typora-match-font);
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: normal;
+}
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-inner { white-space: normal; }
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-children { border-left: 0; }
+
+body.typora-match .workspace-leaf-content[data-type="outline"] .view-content { padding: 4px; }
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-self { padding: 3px 16px; margin-bottom: 0; }
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-children { padding-inline-start: 14px; margin-inline-start: 0; }
+body.typora-match .workspace-leaf-content[data-type="outline"] .outline > .tree-item > .tree-item-self { font-weight: 700; }
+
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-self {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 17.6px;
+  min-height: 30px;
+}
+
+body.typora-match .workspace-leaf-content[data-type="outline"] .tree-item-self { column-gap: 0; }
+body.typora-match .workspace-leaf-content[data-type="outline"] .collapse-icon { position: absolute; left: 0; width: 12px; margin: 0; }
